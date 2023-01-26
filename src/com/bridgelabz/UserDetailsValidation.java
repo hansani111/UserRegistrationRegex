@@ -30,4 +30,16 @@ public class UserDetailsValidation {
             System.out.println("invalid.");
         }
     }
+
+    static void isValidEmail(String mail) {
+        String regex = "^[a-z A-Z 0-9]+([.][a-z A-Z 0-9]{1,})?[@][a-z A-Z]+[.][a-z A-Z]{2,3}([.][a-z A-Z]{1,2})?$";
+
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(mail);
+
+        if (matcher.matches())
+            System.out.println("valid");
+        else
+            System.out.println("invalid");
+    }
 }

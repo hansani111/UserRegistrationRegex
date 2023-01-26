@@ -13,5 +13,9 @@ public class UserRegistrationMain {
         System.out.println("Enter the last name : ");
         String lastName = sc.next();
         UserDetailsValidation.isValidLastName(lastName);
+
+        System.out.println("Enter the Email");
+        String email = sc.next();
+        UserDetailsValidation.isValidEmail(email);
     }
 }
