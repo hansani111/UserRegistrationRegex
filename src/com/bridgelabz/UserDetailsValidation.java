@@ -42,4 +42,16 @@ public class UserDetailsValidation {
         else
             System.out.println("invalid");
     }
+
+    static void isValidMobileNumber(String mobNo) {
+        String regex = "^[+]?(91)[\\s][0-9]{10}$"; // 91 {10digit}
+
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(mobNo);
+
+        if (matcher.matches())
+            System.out.println("valid");
+        else
+            System.out.println("invalid");
+    }
 }
