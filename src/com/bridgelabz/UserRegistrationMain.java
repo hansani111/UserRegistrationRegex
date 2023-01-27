@@ -18,10 +18,16 @@ public class UserRegistrationMain {
         String email = sc.next();
         UserDetailsValidation.isValidEmail(email);
 
-        System.out.println("Mobile Number");
+        System.out.println("----Mobile Number----");
         UserDetailsValidation.isValidMobileNumber("+91 7982468891");
         UserDetailsValidation.isValidMobileNumber("91 7982468891");
         UserDetailsValidation.isValidMobileNumber("7982468891");
         UserDetailsValidation.isValidMobileNumber("7982468891");
+
+        System.out.println("----Password----");
+        UserDetailsValidation.isValidPassword("abcdefgh");
+        UserDetailsValidation.isValidPassword("abcd1234");
+        UserDetailsValidation.isValidPassword("abcd12345_@./#&+-");
+        UserDetailsValidation.isValidPassword("abcd123");
     }
 }

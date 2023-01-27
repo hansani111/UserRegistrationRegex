@@ -54,4 +54,17 @@ public class UserDetailsValidation {
         else
             System.out.println("invalid");
     }
+
+    public static void isValidPassword(String password) {
+        String regex = "^[a-z A-Z 0-9 _@./#&+-]{8,}$";
+
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password);
+
+        if(matcher.matches()) {
+            System.out.println("valid");
+        }else {
+            System.out.println("invalid");
+        }
+    }
 }
