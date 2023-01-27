@@ -17,5 +17,11 @@ public class UserRegistrationMain {
         System.out.println("Enter the Email");
         String email = sc.next();
         UserDetailsValidation.isValidEmail(email);
+
+        System.out.println("Mobile Number");
+        UserDetailsValidation.isValidMobileNumber("+91 7982468891");
+        UserDetailsValidation.isValidMobileNumber("91 7982468891");
+        UserDetailsValidation.isValidMobileNumber("7982468891");
+        UserDetailsValidation.isValidMobileNumber("7982468891");
     }
 }
