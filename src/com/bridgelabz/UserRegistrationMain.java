@@ -25,9 +25,9 @@ public class UserRegistrationMain {
         UserDetailsValidation.isValidMobileNumber("7982468891");
 
         System.out.println("----Password----");
-        UserDetailsValidation.isValidPassword("abcdefgh");
-        UserDetailsValidation.isValidPassword("abcd1234");
-        UserDetailsValidation.isValidPassword("abcd12345_@./#&+-");
+        UserDetailsValidation.isValidPassword("Abcdefgh");
+        UserDetailsValidation.isValidPassword("aBcd1234");
+        UserDetailsValidation.isValidPassword("abCD12345!@#$%^&*+()-_=,./");
         UserDetailsValidation.isValidPassword("abcd123");
     }
 }
